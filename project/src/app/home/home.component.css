@@ -1,0 +1,268 @@
+header {
+    background-color: rgb(243, 207, 207);
+    color: #000000;
+    padding: 10px 0;
+    margin: 0; 
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 0 auto;
+    padding: 0; 
+  }
+  
+  .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+    width: 150px;
+  }
+  
+  .logo span {
+    font-size: 14px;
+  }
+
+  .opisanie{
+    position: relative;
+    font-size: 17px;
+    width: 100%;
+    margin-left: 28px;
+
+  }
+   
+  
+    .contact-info p {
+      margin: 5px; /* Убираем внутренние отступы у абзацев */
+      display: inline-block; /* Делаем элементы блоками в одной строке */
+    }
+    
+    .contact-info p img {
+      margin-left: 10px; 
+    }
+
+    .contact-info{
+        margin-top: 110px;
+    }
+    
+    
+    
+    .shopping-cart {
+      flex-basis: 50px;
+    }
+    
+    .shopping-cart a {
+      display: block;
+      width: 50px;
+      height: 50px;
+      background-color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 50px;
+    }
+    
+    .shopping-cart a:hover {
+      background-color: #ccc;
+    }
+  
+    .background-container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+    
+  
+    
+    
+    .delivery-text {
+      position: relative;
+      top: 160px;
+      left: 300px;
+      transform: translateY(-50%);
+      font-size: 55px; /* Увеличиваем размер текста */
+      color: rgb(255, 255, 255);
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; /* Применяем необычный шрифт */
+    }
+    
+    .freshness-guarantee {
+      position: relative;
+      top: 210px;
+      left: 109px;
+      font-size: 24px;
+      color: white;
+    }
+    .freshness-guarantee strong {
+      font-weight: bold;
+    }
+  
+    .button {
+      position:relative;
+      top: 290px; 
+      right: 279px;
+      display: inline-block;
+      padding: 20px 30px;
+      background: linear-gradient(to top, #ec4884, #dc8b8b);
+      border: none;
+      border-radius: 5px;
+      color: #fff; /* Белый цвет текста */
+      font-size: 20px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      transition: all 0.3s ease; /* Анимация перехода */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Тень */
+      
+    }
+    
+    .button:hover {
+      transform: translateY(-2px); /* Сдвигаем кнопку вверх на 2px при наведении */
+      box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2); /* Увеличиваем тень */
+    }
+    
+  
+    
+    .background-image {
+      position: absolute; /* Абсолютное позиционирование относительно родителя */
+      top: 0; /* Располагаем вверху */
+      left: 0; /* Располагаем влево */
+      width: 99%; /* Ширина равна ширине родительского элемента */
+      height: 100%; /* Высота равна высоте родительского элемента */
+      background-image: url('/assets/ba.png'); /* Задний фон */
+      background-size: cover; /* Растягиваем изображение на всю ширину и высоту элемента */
+      background-position: center; /* Располагаем изображение по центру */
+      background-repeat: no-repeat; /* Запрещаем повторение изображения */
+    }
+    .sevendays{
+        color: #ec4884;
+    }
+    
+    .pic-image {
+      position: absolute; /* Абсолютное позиционирование относительно родителя */
+      top: 0; /* Располагаем вверху */
+      right: 20px; /* Располагаем вправо */
+      width: 43.5%; /* Ширина равна половине ширины родительского элемента */
+      height: 100%; /* Высота равна высоте родительского элемента */
+      background-image: url('/assets/pic.png'); /* Передний фон */
+      background-size: cover; /* Растягиваем изображение на всю ширину и высоту элемента */
+      background-position: center; /* Располагаем изображение по центру */
+      background-repeat: no-repeat; /* Запрещаем повторение изображения */
+    }
+  
+  
+    .green-border {
+      display: inline;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+    
+    .green-box {
+        position: relative;
+        border: 2px solid rgb(216, 232, 216);
+        padding:  15px; 
+        border-radius: 5px; 
+        margin-right: 20px;
+        transition: background-color 0.5s, color 0.5s;
+        font-size: 20px;
+        display: inline;
+        
+    }
+    
+    .green-box:hover {
+      background-color: rgb(106, 152, 106); /* Зеленый фон при наведении */
+      color: white; /* Белый текст при наведении */
+    }
+  
+
+    .hits{
+        color: rgb(106, 152, 106);
+        font-size: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 80px;
+    }
+
+    .card {
+        justify-content: center;
+        align-items: center;
+        display: inline-block;
+        margin-left: 60px;
+        width: 290px; /* Ширина карточки */
+        border: 2px solid #e0d0b0; /* Бежевая рамка */
+        border-radius: 10px; /* Закругление углов */
+        overflow: hidden; /* Предотвращение выхода содержимого за границы рамки */
+        margin-bottom: 20px; /* Отступ между карточками */
+      }
+      
+      .card img {
+        width: 100%; /* Ширина изображения равна ширине карточки */
+        height: auto; /* Высота автоматически рассчитывается */
+      }
+      
+      .card-info {
+        background-color: #f3f3f3; /* Бежевый фон для информации */
+        padding: 10px; /* Отступы внутри блока с информацией */
+      }
+      
+      .card-info h3 {
+        margin-top: 0; /* Убираем верхний отступ у заголовка */
+      }
+      
+      .card-info p {
+        margin-bottom: 0; /* Убираем нижний отступ у абзаца */
+      }
+    
+      .stars {
+        color: #fdd835; /* Желтый цвет */
+      }
+      .big-number {
+        font-size: 24px; /* Увеличиваем размер цифр */
+        font-weight: bold; /* Жирный шрифт */
+      }
+        
+    
+    
+      .green-border {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 10px;
+      }
+      
+      .green-box {
+        border: 2px solid rgb(106, 152, 106);
+        padding: 10px;
+        border-radius: 5px;
+        margin-right: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        transition: background-color 0.5s, color 0.5s;
+        font-size: 15px;
+      }
+      
+      .buy-now {
+        background-color: rgb(106, 152, 106);
+        color: white;
+      }
+      
+      .add-to-cart {
+        background-color:#f3f3f3;
+        color: rgb(106, 152, 106);
+      }
+      
+      .green-box:hover {
+        color: #f3f3f3;
+      }
+      
+      .buy-now:hover {
+        background-color: #f3f3f3;
+        color: rgb(106, 152, 106);
+      }
+      
+      .add-to-cart:hover {
+        background-color: rgb(106, 152, 106);
+        color: white;
+      }
+    

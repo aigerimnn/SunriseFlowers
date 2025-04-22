@@ -1,0 +1,33 @@
+<header>
+  <div class="header-container">
+
+    <div class="logo">
+      <a routerLink="/main">
+      <img src="assets/logo.png" alt="logo" width="150px"></a>
+          <div class = "opisanie">
+          </div>
+
+    </div>
+
+
+  <div class="user">
+    <!-- If not logged in, show login link -->
+    <p *ngIf="!isLoggedIn"><a routerLink="/login"><img src="assets/user.png" width="30"></a></p>
+    
+    <!-- If logged in, show logout link -->
+    <p *ngIf="isLoggedIn"><a (click)="logout()"><img src="assets/logout.png" width="30"></a></p>
+  </div>
+
+
+    <div class="contact-info">
+      <p>+7 (747) 112-30-12</p>
+      <p><a href = "https://wa.me/77471123012"><img src="assets/whatsapp.png" onclick="openWhatsAppLink()" style="cursor: pointer;" alt="WhatsApp" width="30" ></a></p>
+      <p><a href = "https://www.instagram.com/sunrise_flowers_uralsk?igsh=NTFqMXlpM3VmbHk4" ><img src="assets/insta.png" onclick="openInstagram()" style="cursor: pointer;" alt="Instagram" width="30"></a></p>
+      <p><a routerLink="/cart"><img src="assets/cart.png" alt="Instagram" width="30"></a></p>
+      
+    </div>
+  </div>
+
+  </header>
+
+  <router-outlet></router-outlet>

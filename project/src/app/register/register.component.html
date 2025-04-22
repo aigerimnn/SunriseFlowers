@@ -1,0 +1,17 @@
+
+<body>
+  <div class="login-container">
+    <form [formGroup]="form" (submit)="submit()" class="login-form">
+      <h2>Регистрация аккаунта</h2>
+      <input formControlName="username" type="text" placeholder="Имя" required>
+      <input formControlName="email" type="email" placeholder="Email" required>
+      <input formControlName="password" type="password" placeholder="Пароль" required>
+      <input formControlName="password_new" type="password" placeholder="Повторите пароль" required>
+      <button type="submit">Зарегистрироваться</button>
+    </form>
+    <div class="link-to-register">
+      <a href="/login">Уже есть аккаунт? Войдите здесь</a>
+    </div>
+  </div>
+</body>
+

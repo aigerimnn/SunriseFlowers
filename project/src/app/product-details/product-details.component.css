@@ -1,0 +1,190 @@
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .container h1 {
+    text-align: center;
+  }
+  
+  .container img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
+  .details {
+    margin-top: 20px;
+    display: flex; 
+  }
+  
+  .details p {
+    margin-bottom: 10px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .bouquet-details {
+    margin-left: 10px;
+    flex-grow: 1; /* Растягиваем этот блок, чтобы занять все доступное пространство */
+  } 
+  
+  .bouquet-details h1 {
+    margin: 0;
+  }
+  
+  .delivery-info {
+    background-color: rgb(215, 246, 215);
+    color: rgb(0, 0, 0);
+    padding: 0px 7px; /* Уменьшаем отступы сверху и снизу, а также слева и справа */
+    position: relative;
+    margin-top: -60px;
+    margin-left: 10px;
+    border-left: 5px;
+    border-right: 10px;
+    white-space: nowrap; /* Предотвращаем перенос слов на новую строку */
+  
+  }
+  
+  .delivery-time {
+    color: rgb(108, 156, 108); /* Зеленый цвет */
+  }
+  
+  .buttons {
+    margin-top: 10px;
+    display: flex; /* Устанавливаем flex-контейнер */
+    flex-wrap: nowrap; /* Запрещаем перенос элементов на следующую строку */
+  }
+  
+  .btn {
+    padding: 5px 10px;
+    margin-right: 10px;
+    border: none;
+    background-color: rgb(250, 232, 232);
+    cursor: pointer;
+    border-radius: 5px; /* Добавляем закругление к кнопкам */
+  }
+  
+  
+  .btn.active {
+    background-color: rgb(143, 189, 143); /* Темно-зеленый цвет */
+    color: rgb(0, 0, 0);
+  }
+  
+  
+  
+  .stars {
+    margin-top: 20px;
+    display: inline-block; /* Делаем блок строчным */
+    font-size: 20px; /* Увеличиваем размер звездочек */
+  }
+  
+  .star {
+    color: rgb(226, 220, 22);
+    margin-right: 5px; /* Добавляем отступ справа между звездочками */
+  }
+  
+  
+  .reviews {
+    display: inline-block; /* Делаем блок строчным */
+    margin-left: 10px; /* Добавляем отступ слева для разделения от звездочек */
+    font-size: 20px; /* Увеличиваем размер /37 */
+    color: #ccc;
+  }
+  
+  
+  .price {
+    text-align: center;
+    position: relative;
+    margin-right: 250px;
+    font-size: 24px; /* Устанавливаем размер текста */
+    margin-top: 5px; /* Добавляем отступ сверху */
+  }
+  .label {
+    font-weight: 300; /* Тонкий шрифт */
+    
+  }
+  
+  .amount {
+    color: rgb(202, 169, 112); /* Бежевый цвет */
+    font-size: 28px; /* Больший размер */
+  }
+  
+  .separator {
+    border: none;
+    border-top: 1px solid #ccc;
+    width: 770px; /* Вычисляем ширину линии, оставляя место для слова "Цена:" */
+    margin-top: 30px; /* Расстояние между линией и следующим элементом */
+    margin-right: 100px;
+  }
+  
+  
+  .composition {
+    position: relative;
+    margin-left: 435px;
+    margin-top: 20px;
+  }
+  
+  
+  .add-to-cart-btn {
+    display: inline-block;
+    padding: 20px 100px;
+    font-size: 16px;
+    border: 2px solid rgb(111, 152, 111);
+    border-radius: 5px;
+    color: rgb(121, 176, 121);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  
+    position: relative;
+    margin-left: 435px;
+    margin-top: 10px;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: rgb(111, 152, 111);
+    color: rgb(255, 255, 255);
+  }
+  
+  .buy-in-one-click-btn {
+    display: inline-block;
+    padding: 20px 120px;
+    font-size: 16px;
+    border: 2px solid rgb(111, 152, 111);
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(111, 152, 111);
+    cursor: pointer;
+  
+    position: relative;
+    margin-left: 50px;
+  }
+  
+  
+  .v_korzinu{
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 2px solid rgb(111, 152, 111);
+    border-radius: 5px;
+    color: rgb(121, 176, 121);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative;
+    top: -5px;
+  }
+  
+  .v_korzinu:hover {
+    background-color: rgb(111, 152, 111);
+    color: rgb(255, 255, 255);
+  }
+  

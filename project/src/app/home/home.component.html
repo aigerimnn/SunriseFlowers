@@ -1,0 +1,121 @@
+  <div class="background-container">
+    <div class="background-image">
+      <span class="delivery-text">Доставка цветов <br> Уральск</span>
+      <span class="freshness-guarantee">Гарантия свежести букета <strong class="sevendays">на 7 дней!</strong></span>
+      <a href="https://wa.me/77471123012" target="_blank" class="button">
+        <img src="assets/whatsapp_white.png" alt="WhatsApp" width="50"style="vertical-align: middle;"> <strong>Перейти в чат</strong>
+      </a>
+    </div>
+    <div class="pic-image"></div>
+  </div>
+  
+  <br>
+  <div *ngIf = "categories" class="green-border">
+    <p class="green-box" *ngFor="let category of categories" (click)="navigateToCategory(category.id)">
+      {{ category.name }}
+    </p>
+  </div>
+  
+  
+  
+  <h2 class = "hits">Наши хиты продаж!</h2>
+  
+  <div class="card">
+    <a href="bouquet_details.html">
+      <img src="assets/flower1.png" alt="Ты — моё солнце">
+    </a>
+    <div class="card-info">
+      <h3>Ты — моё солнце</h3>
+      <p>Рейтинг: <span class="stars">★★★★★</span> / 37</p>
+      <div class="price">
+        <span class="big-number">15 000</span> ₸
+      </div>
+      <div class="green-border">
+        <div class="green-box buy-now">
+          <a href="https://wa.me/77471123012?text=Здравствуйте!🌷%0AЯ%20бы%20хотела%20заказать%20букет%20%22Ты%20-%20моё%20солнце%22💛" target="_blank">
+            <span>Купить в 1 клик</span>
+          </a>
+        </div>
+        <div class="green-box add-to-cart" onclick="addToCart('Ты — моё солнце', 15000)">
+          <span>В корзину</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="card">
+    <img src="assets/flower2.png" alt="Шепот любви">
+    <div class="card-info">
+      <h3>Шепот любви</h3>
+      <p>Рейтинг: <span class="stars">★★★★★</span> / 25</p>
+      <div class="price">
+        <span class="big-number">22 500</span> ₸
+      </div>
+      <div class="green-border">
+        <div class="green-box buy-now">
+          <a href="https://wa.me/77471123012?text=Здравствуйте!🌷%0AЯ%20бы%20хотела%20заказать%20букет%20%22Шепот%20любви%22❤️" target="_blank">
+            <span>Купить в 1 клик</span>
+          </a>
+        </div>
+        <div class="green-box add-to-cart" onclick="addToCart('Шепот любви', 22500)">
+          <span>В корзину</span>
+        </div>
+      </div>
+          
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="assets/flower3.png" alt="Улыбка феи">
+    <div class="card-info">
+      <h3>Улыбка феи</h3>
+      <p>Рейтинг: <span class="stars">★★★★★</span> / 82</p>
+      <div class="price">
+        <span class="big-number">11 800</span> ₸
+      </div>
+      <div class="green-border">
+        <div class="green-box buy-now">
+          <a href="https://wa.me/77471123012?text=Здравствуйте!🌷%0AЯ%20бы%20хотела%20заказать%20букет%20%22Улыбка%20феи%22🧚‍♀️" target="_blank">
+            <span>Купить в 1 клик</span>
+          </a>          
+        </div>
+        <div class="green-box add-to-cart" onclick="addToCart('Улыбка феи', 11800)">
+          <span>В корзину</span>
+        </div>
+      </div>
+          
+    </div>
+  </div>
+  
+  <div class="card">
+    <img src="assets/flower4.png" alt="Ару көктем">
+    <div class="card-info">
+      <h3>Ару көктем</h3>
+      <p>Рейтинг: <span class="stars">★★★★★</span> / 72</p>
+      <div class="price">
+        <span class="big-number">21 000</span> ₸
+      </div>
+      <div class="green-border">
+        <div class="green-box buy-now">
+          <a href="https://wa.me/77471123012?text=Здравствуйте!🌷%0AЯ%20бы%20хотела%20заказать%20букет%20%22Ару%20көктем%22🎀" target="_blank">
+            <span>Купить в 1 клик</span>
+          </a>
+        </div>
+        <div class="green-box add-to-cart" onclick="addToCart('Ару көктем', 21000)">
+          <span>В корзину</span>
+        </div>
+      </div>
+          
+    </div>
+  </div>
+  <script>
+    function addToCart(name, price) {
+      let cart = JSON.parse(localStorage.getItem('cart')) || [];
+      cart.push({ name, price });
+      localStorage.setItem('cart', JSON.stringify(cart));
+      alert(`${name} добавлен(а) в корзину!`);
+    }
+  </script>
+  
+  

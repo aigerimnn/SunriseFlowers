@@ -1,0 +1,50 @@
+<div *ngFor="let product of products">
+  <div class="container">
+    <img src="{{ product.image_url }}" alt="Product Image" height="300px">
+
+    <div class="details">
+      <!-- Информация о букете -->
+      <div class="bouquet-details">
+        <h1>{{ product.name }}</h1>
+        <div class="buttons">
+          <button class="btn active"><strong>S</strong> (стандарт)</button>
+          <button class="btn"><strong>M</strong> (+30% цветов)</button>
+          <button class="btn"><strong>L</strong> (+50% цветов)</button>
+          <button class="btn"><strong>XL</strong> (+100% цветов)</button>
+        </div>
+
+        <div class="reviews">
+          <div class="stars">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+          </div>
+          / 39 отзывов
+        </div>
+      </div>
+    </div>
+
+
+    <div class="delivery-info">
+      <p>Доставим: <span class="delivery-time">в течение часа</span></p>
+    </div>
+  </div>
+  <div class="price">
+      <p>{{ product.price }} ₸</p>
+  </div>
+  <hr class="separator">
+  
+  <div class="composition">
+    <p>{{ product.description }}</p>
+    </div>
+  
+
+  <div class="buttons">
+    <button class="add-to-cart-btn" (click)="addToCart(product)">+ Добавить в корзину</button>
+    <button class="buy-in-one-click-btn">Купить в 1 клик</button>
+  </div>
+
+
+</div>
